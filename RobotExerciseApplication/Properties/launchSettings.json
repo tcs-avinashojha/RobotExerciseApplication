@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RobotExerciseApplication": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\\\source\\\\Robot\\\\RobotExerciseApplication\\\\RobotExerciseApplication\\\\Input1.txt C:\\source\\Robot\\RobotExerciseApplication\\RobotExerciseApplication\\Input2.txt"
+    }
+  }
+}
