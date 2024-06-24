@@ -4,13 +4,14 @@ public class Program
 {
     public static void Main(string[] args)
     {
+        // read input files from launch settings command line argument
         var userInput = args.Where(File.Exists);
         foreach (var input in userInput)
         {
             Console.WriteLine("Executing command from: " + input);
             Console.WriteLine();
 
-            ExecuteCommand(input);
+            ProcessCommand(input);
 
             Console.WriteLine();
             Console.WriteLine("---------------------------------");
@@ -20,7 +21,8 @@ public class Program
         Console.ReadLine();
     }
 
-    private static void ExecuteCommand(string input)
+    // Process input request for robo movement. 
+    private static void ProcessCommand(string input)
     {
         var robot = new Robo();
         var roboCommand = new Command(robot);
