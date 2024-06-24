@@ -23,7 +23,7 @@ public class Program
     private static void ExecuteCommand(string input)
     {
         var robot = new Robo();
-        var simulator = new Command(robot);
+        var roboCommand = new Command(robot);
 
         using (var file = new StreamReader(input))
         {
@@ -31,7 +31,7 @@ public class Program
             while ((command = file.ReadLine()) != null)
             {
                 Console.WriteLine("Executing command: " + command);
-                simulator.Execute(command);
+                roboCommand.Execute(command);
             }
         }
     }
